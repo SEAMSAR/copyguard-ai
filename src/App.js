@@ -49,7 +49,7 @@ export default function CopyGuardAI() {
   // API Keys
   const [anthropicKey, setAnthropicKey] = useState("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");
   const [googleKey, setGoogleKey] = useState("AIzaSyDp2oRBEkvOBVjHkvVpSf5rQy6Jui_rQHM");
-  const [searchEngineId, setSearchEngineId] = useState("<script async src="https://cse.google.com/cse.js?cx=c3b1fdad434f64fb9">
+  const [searchEngineId, setSearchEngineId] = useState("c3b1fdad434f64fb9">
 </script>
 <div class="gcse-search"></div>");
   const [showKeys, setShowKeys] = useState(false);
