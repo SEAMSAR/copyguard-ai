@@ -49,7 +49,9 @@ export default function CopyGuardAI() {
   // API Keys
   const [anthropicKey, setAnthropicKey] = useState("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");
   const [googleKey, setGoogleKey] = useState("AIzaSyDp2oRBEkvOBVjHkvVpSf5rQy6Jui_rQHM");
-  const [searchEngineId, setSearchEngineId] = useState("https://cse.google.com/cse.js?cx=c3b1fdad434f64fb9");
+  const [searchEngineId, setSearchEngineId] = useState("<script async src="https://cse.google.com/cse.js?cx=c3b1fdad434f64fb9">
+</script>
+<div class="gcse-search"></div>");
   const [showKeys, setShowKeys] = useState(false);
   const [keysSet, setKeysSet] = useState(false);
 
@@ -95,7 +97,9 @@ export default function CopyGuardAI() {
 
   // ── Google Real Search ──────────────────────────────────────────
   const searchGoogle = async (query) => {
-    const url = `https://www.googleapis.com/customsearch/v1?key=${googleKey}&cx=${searchEngineId}&q=${encodeURIComponent(query)}&num=10`;
+    const url = `https://www.googleapis.com/customsearch/v1?key=${AIzaSyDp2oRBEkvOBVjHkvVpSf5rQy6Jui_rQHM}&cx=${<script async src="https://cse.google.com/cse.js?cx=c3b1fdad434f64fb9">
+</script>
+<div class="gcse-search"></div>}&q=${encodeURIComponent(query)}&num=10`;
     const res = await fetch(url);
     const data = await res.json();
     if (data.error) throw new Error(data.error.message);
