@@ -47,7 +47,7 @@ function generateFingerprint() {
 
 export default function CopyGuardAI() {
   // API Keys
-  const [anthropicKey, setAnthropicKey] = useState("");
+  const [anthropicKey, setAnthropicKey] = useState("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");
   const [googleKey, setGoogleKey] = useState("AIzaSyDp2oRBEkvOBVjHkvVpSf5rQy6Jui_rQHM");
   const [searchEngineId, setSearchEngineId] = useState("");
   const [showKeys, setShowKeys] = useState(false);
